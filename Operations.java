@@ -4,22 +4,32 @@ import java.util.Scanner;
 
 public class Operations {
 
-    static double BALANCE = 1000;
-
     public static Scanner scanner = new Scanner(System.in);
+
+    private static double BALANCE = 1000;
+
+    public Operations(double BALANCE){
+        this.BALANCE = BALANCE;
+    }
+
+    public double getBALANCE() {
+        return BALANCE;
+    }
 
     public static void withdraw(){
         System.out.print("Enter ammount: ");
         double ammount = scanner.nextDouble();
+        BALANCE -= ammount;
         System.out.println("Successful!");
-        System.out.println("Balance: " + (BALANCE+ammount));
+        System.out.println("Balance: " + BALANCE);
     }
 
     public static void deposit(){
         System.out.print("Enter ammount: ");
         double ammount = scanner.nextDouble();
+        BALANCE += ammount;
         System.out.println("Successful!");
-        System.out.println("Balance: " + (BALANCE - ammount));
+        System.out.println("Balance: " + BALANCE);
     }
 
     public static void balance(){
@@ -55,4 +65,3 @@ public class Operations {
     }
 
 }
-
