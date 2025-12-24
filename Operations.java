@@ -15,7 +15,7 @@ public class Operations {
         System.out.println("Balance: " + (BALANCE+ammount));
     }
 
-    public static void cash(){
+    public static void deposit(){
         System.out.print("Enter ammount: ");
         double ammount = scanner.nextDouble();
         System.out.println("Successful!");
@@ -55,3 +55,4 @@ public class Operations {
     }
 
 }
+
