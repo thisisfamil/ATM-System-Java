@@ -4,27 +4,6 @@ import atm.Operations;
 
 public class Main {
 
-//    static double BALANCE = 1000;
-//
-//    static Scanner scanner = new Scanner(System.in);
-//
-//    public static void withdraw(){
-//        System.out.print("Enter ammount: ");
-//        double ammount = scanner.nextDouble();
-//        System.out.println("Successful!");
-//        System.out.println("Balance: " + (BALANCE+ammount));
-//    }
-//
-//    public static void cash(){
-//        System.out.print("Enter ammount: ");
-//        double ammount = scanner.nextDouble();
-//        System.out.println("Successful!");
-//        System.out.println("Balance: " + (BALANCE - ammount));
-//    }
-//
-//    public static void balance(){
-//        System.out.println("Balance: " + BALANCE);
-//    }
     public static Scanner scanner = Operations.scanner;
 
     public static void main(String[] args) {
